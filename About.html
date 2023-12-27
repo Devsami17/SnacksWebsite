@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snacks Store</title>
+    <link rel="icon" type="image/x-icon" href="Images/favicon-removebg-preview.png">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="Css/HomePage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&family=Rajdhani:wght@500;600;700&family=Syne:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="col-lg-12 col-sm-12 col-md-12 d-flex header" id="header">
+                <div class="col-sm-10 col-lg-3 col-md-2  ">
+                    <img src="Images/snacks Logo.png" height="230px" alt="">
+                </div>
+                <div class="col-lg-6 mt-4 col-md-8 d-flex justify-content-around">
+                    <a href="HomePage.html">Home</a>
+                    <a href="Products.html">Products</a>
+                    <a href="Gallery.html" onclick="gallery()">Gallery</a>
+                    <a href="About.html">About</a>
+                    <a href="Contact.html">Contact</a>
+                </div>
+                <div class=" col-sm-2 col-lg-3 mt-4 col-md-2   ">
+                    <span class="col-sm-4"></span>
+                    <span
+                        class="fas fa-user-circle fs-4 d-flex justify-content-center align-items-center  float-end pe-4 "
+                        id="profile-icon"></span>
+                    <div id="profile-circle">0</div>
+                    <span
+                        class="fa-solid fa-bag-shopping fs-4 d-flex justify-content-center align-items-center  float-end pe-4  "
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight"></span>
+                    <div id="Online-circle"></div>
+
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Add To Cart</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            No Result Found...
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-xmark" id="crossSecnav" onclick="crossic()"></i>
+                    <i class="fa-solid fa-bars" onclick="bars()" id="barsSecnav"></i>
+                </div>
+
+
+            </div>
+        </nav>
+    </header>
+    <div class="sec-navbar collapse" id="sec-navbar">
+        <a href="HomePage.html">Home</a><a href="Products.html">Products</a><a href="Gallery.html">Gallery</a><a href="About.html
+        ">About</a> <a href="Contact.html">Contact</a>
+    </div>
+
+    <section class="About-1 ">
+        <div>
+            <h1 class="mt-5">About Us</h1>
+        </div>
+        <div class="mt-5 d-flex flex-wrap">
+            <h3 class="col-lg-12">THE JOURNEY</h3>
+            <p class="mt-3 col-lg-12"  data-aos="fade-up">
+                The journey to establish a snack store was no mere whim; it was an odyssey fueled by passion, a hunger
+                to provide a delightful culinary experience, and a desire to create a haven for food enthusiasts. The
+                inception of this venture was sparked by a shared love for delectable treats that evoke nostalgia and
+                ignite taste buds. Countless hours were spent meticulously crafting a vision, sourcing the finest
+                ingredients, and experimenting with flavors to curate an array of snacks that tantalize the senses. From
+                the initial spark of an idea to the bustling reality of a welcoming storefront, every step was a
+                testament to dedication, perseverance.</p>
+            <h3 class="col-lg-12 mt-4">THE PRODUCTS</h3>
+            <p class="mt-3" data-aos="fade-up">
+                In our snack store, diversity is our cornerstone. We've meticulously curated a diverse range of products
+                to cater to every palate, craving, and dietary need. From crispy, savory chips that tingle the taste
+                buds to wholesome, organic nuts and dried fruits that offer a burst of natural flavors, our shelves
+                boast a wide array of options. For the health-conscious, we offer an assortment of gluten-free, vegan,
+                and low-sugar snacks that don't compromise on taste. Chocolate lovers can revel in the indulgence of
+                artisanal chocolates, while those seeking a savory kick can explore our collection of international
+                snacks and exotic flavors. Our store isn't just about providing sustenance; it's about celebrating the
+                artistry and craftsmanship.</p>
+            <h3 class="col-lg-12 mt-4">THE OUTLETS</h3>
+            <p class="mt-3"  data-aos="fade-up">
+
+                Our outlets are more than just places to purchase snacks; they're bustling hubs designed to elevate the
+                snack-buying experience. Each outlet is meticulously crafted to embody our passion for snacks, offering
+                a welcoming atmosphere where customers can immerse themselves in a world of culinary delights. With
+                vibrant displays showcasing an eclectic array of snacks, our outlets invite exploration and discovery.
+                From the inviting aroma of freshly popped popcorn to the colorful displays of artisanal chocolates and
+                neatly arranged shelves of diverse treats, every corner exudes an aura of gastronomic adventure. Our
+                knowledgeable and friendly staff stand ready to guide and assist, ensuring that each customer finds
+                their perfect snack match.</p>
+            <h3 class="col-lg-12 mt-4">THE QUALITY ACHIVEMENTS</h3>
+            
+            <p class="mt-3 text-center col-md-12 col-lg-12" data-aos="fade-up"> 
+
+                Our outlets are more than just places to purchase snacks; they're bustling hubs designed to elevate the
+                snack-buying experience. Each outlet is meticulously crafted to embody our passion for snacks, offering
+                a welcoming atmosphere where customers can immerse themselves in a world of culinary delights. With
+                vibrant displays showcasing an eclectic array of snacks, our outlets invite exploration and discovery.
+                From the inviting aroma of freshly popped popcorn to the colorful displays of artisanal chocolates and
+                neatly arranged shelves of diverse treats, every corner exudes an aura of gastronomic adventure. Our
+                knowledgeable and friendly staff stand ready to guide and assist, ensuring that each customer finds
+                their perfect snack match.</p> <br>
+              <span class="text-center col-lg-12" style="font-weight: 900; font-size: 18px; max-width: 400px !important;">We have also managed to grab THE BRAND OF THE YEAR AWARD 2023.</span>
+        
+        </p>
+        </div>
+        </div>
+    </section>
+    <footer class="mt-5">
+        <div class="d-flex justify-content-around col-lg-12 col-sm-12 col-md-12 flex-wrap">
+            <div class="col-lg-2 col-sm-6 d-flex flex-column one-col flex-wrap">
+                <h2 class="mt-lg-1">About</h2>
+                <a href="HomePage.html">Home</a><a href="About.html">About</a><a href="Products.html">Products</a><a href="Contact.html">Contact Us</a><a
+                    href="Gallery.html">Gallery</a>
+            </div>
+            <div class="col-lg-2 col-sm-6  d-flex flex-column sec-col col-md-12">
+                <h2 class="mt-lg-1">Shop</h2>
+                <a href="Products.html">Frozen Snacks</a><a href="Products.html" >Frozen
+                    Paratha</a><a href="Products.html" >Nuts</a><a href="Products.html"
+                    >Biscuits</a><a href="Products.html">Ready To Eat</a>
+            </div>
+            <div class="col-lg-6 col-sm-12 third-col col-md-12 ">
+                <h2 class="mt-lg-1">Subscribe To Our Newsletter</h2>
+                <input type="text" placeholder="Your Email"><span><button>Subscribe</button></span>
+                <p>Connect With Us:</p>
+                <div id="Iconss"><span class="fa-brands fa-facebook" onclick="facebook()"></span><span class="fa-brands fa-twitter" onclick="twitter()"></span>
+                    <span class="fa-brands fa-youtube" onclick="youtube()"></span><span class="fa-brands fa-whatsapp" onclick="whatsapp()"></span>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </footer>
+
+    <body>
+
+    </body>
+
+</html>
+<script src="HomePage.js"></script>
+<script>
+    AOS.init();
+  </script>
+  <script  src="Products.Js"></script>

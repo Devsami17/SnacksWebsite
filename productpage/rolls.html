@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>ROLLS</title>
+    <style>
+        *{
+          margin: 0; padding: 0;
+          box-sizing: border-box;
+      }
+      .container{
+          position: relative;
+          min-height: 100vh;
+          background: #da291c;
+      }
+      .container .image-container{
+          display: flex;
+          flex-wrap: wrap;
+          gap: 15px;
+          padding: 10px;
+      }
+      .container .image-container .image{
+          height: 300px;
+          width: 300px;
+          border: 10px solid #fff;
+          overflow: hidden;
+          cursor: pointer;
+      }
+      .container .image-container .image img{
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          transition: .2s linear;    
+      }
+      .container .image-container .image:hover img{
+          transform: scale(1.1);
+      }
+    </style>
+</head>
+<body style="background: url(Products\ Images/bg3.png.jpg);">
+    <div style=" width: 80%; height: 100%; margin-left: 130px; background-color: #da291c; margin-top: 5px;"><br>
+        <h1 style="font-size: 50px; margin-left: 62px; color: white; font-family: sans-serif; margin-top: 20px; font-weight: bold;">ROLLS</h1>
+    <div class="container">
+      <div class="image-container">
+    <div class="image" style="border: 1px solid transparent; height: 450px; width: 450px; margin-left: 40px; filter: drop-shadow(5px 5px 10px #000000);">
+        <img style="width: 450px;" src="Products Images/rolls.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+<div style="border: 1px solid white; height: 448px; width: 470px; margin-left: 511px; margin-top: -643px; background-color: white; filter: drop-shadow(5px 5px 10px #000000);">
+    <h2 style="margin-top: 20px; margin-left: 15px; font-family: sans-serif; font-weight: bold;">SPRING ROLLS</h2><br>
+    <div>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <h4 style="font-family: sans-serif; font-weight: bold;">Description</h4>
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">a cylindrical casing of rice paper, or sometimes wheat-and-egg dough, filled with a shredded mixture of vegetables and often meat or seafood, served fresh or deep-fried.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <h4 style="font-family: sans-serif; font-weight: bold;">Nutrition Facts</h4>
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Calories   160,	
+                Fat   10g 	13%,
+                     Saturated   1.5g 	7%,
+                     Trans   0g,	
+                Cholesterol   0mg 	0%,
+                Sodium   170mg 	7%,
+                Carbohydrates   15g 	6%,
+                     Fiber   1g 	5%,
+                Sugars   less than  1g,	
+                Protein   2g,	
+                Vitamin D   0mc 	0%,
+                Vitamin C  	6%,
+                Calcium   10mg 	0%,
+                Iron   0.6mg 	2%,
+                Potassium   350mg 	6%.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <h4 style="font-family: sans-serif; font-weight: bold;">Ingredients</h4>
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> white rice flour, tapioca flour, salt, and water.</div>
+          </div>
+        </div>
+    </div>
+    </div>
+            
+    </div>    
+</body>
+</html>
